@@ -56,7 +56,8 @@
     <Compile Include="administration.Designer.cs">
       <DependentUpon>administration.cs</DependentUpon>
     </Compile>
-    <Compile Include="database.cs" />
+    <Compile Include="tools.cs" />
+    <Compile Include="dataBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="administration.resx">

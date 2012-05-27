@@ -10,7 +10,7 @@ namespace employeeAdministration
 {
     class dataBase
     {
-        protected string server = "192.168.13.22";
+        protected string server = "192.168.0.113";
         protected string userid = "employeeadmin";
         protected string password = "employeeadmin";
         protected string database = "employeeadmin";
@@ -51,7 +51,7 @@ namespace employeeAdministration
                 conn.Open();
 
                 //debug
-                //MessageBox.Show("MySQL version :" + conn.ServerVersion.ToString() + "info" + conn.Database.ToString() + "", "server info", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //MessageBox.Show("MySQL version :" + conn.ServerVersion.ToString() + "info :" + conn.Database.ToString() + "", "server info", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
             catch (MySqlException ex)
@@ -68,7 +68,7 @@ namespace employeeAdministration
             try
             {
                 //debug
-                MessageBox.Show("Colsed conn" + conn.ServerVersion.ToString() + "info" + conn.Database.ToString() + "", "server info", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //MessageBox.Show("Colsed conn" + conn.ServerVersion.ToString() + "info" + conn.Database.ToString() + "", "server info", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 conn.Close();
             }
             catch (MySqlException ex)

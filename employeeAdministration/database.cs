@@ -10,7 +10,7 @@ namespace employeeAdministration
 {
     class dataBase
     {
-        protected string server = "192.168.0.113";
+        protected string server = "127.0.0.1";
         protected string userid = "employeeadmin";
         protected string password = "employeeadmin";
         protected string database = "employeeadmin";

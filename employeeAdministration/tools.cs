@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace employeeAdministration
 {
@@ -58,4 +59,35 @@ namespace employeeAdministration
             return valid;
         } 
     }
+
+    /*class MForm : Form
+   {
+
+       private DataGrid dg = null;
+      public MForm()
+       {
+
+           this.Text = "DataGrid";
+           this.Size = new Size(350, 300);
+
+           this.InitUI();
+
+
+           this.CenterToScreen();
+       }
+
+       void InitUI()
+       {
+           dg = new DataGrid();
+
+           dg.CaptionBackColor = System.Drawing.Color.White;
+           dg.CaptionForeColor = System.Drawing.Color.Black;
+           dg.CaptionText = "Users";
+
+           dg.Location = new Point(8, 0);
+           dg.Size = new Size(350, 300);
+           dg.TabIndex = 0;
+           dg.Parent = this;
+       }
+   }*/
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
 
 namespace employeeAdministration
 {
@@ -15,11 +17,13 @@ namespace employeeAdministration
         {
             dataBase DB = new dataBase();
 
-            DB.connectToDB();
+            DataSet ds = DB.readData("SELECT * FROM users;");
 
-            tools tools = new tools();
+            // DataGrid dg = new DataGrid(); 
 
-            tools.checkValue("username","admin");
+            //tools tools = new tools();
+
+            //tools.checkValue("username","admin");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
